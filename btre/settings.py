@@ -21,13 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'q3ohaox#8ikql#vnuen2(oz++gzr%1u*4v1ac0(9!zt+mgkndw'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -86,15 +80,6 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb123',
-        'USER':'postgres',
-        'PASSWORD':'rah',
-        'HOST':'localhost',
-    }
-}
 
 
 # Password validation
@@ -148,11 +133,6 @@ MESSAGE_TAGS = {
    
 }
 # email config
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT= 587
-EMAIL_HOST_USER='sonirahul12342@gmail.com'
-EMAIL_HOST_PASSWORD=''
-EMAIL_USE_TLS=True
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
